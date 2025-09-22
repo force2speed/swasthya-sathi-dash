@@ -19,25 +19,25 @@ export default function Dashboard() {
   return (
     <div className="p-6 space-y-6">
       {/* Hero Section */}
-      <div className="relative overflow-hidden rounded-xl bg-gradient-hero text-white shadow-elevated">
+      <div className="relative overflow-hidden rounded-xl bg-gradient-hero  shadow-elevated">
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-20"
           style={{ backgroundImage: `url(${heroImage})` }}
         />
         <div className="relative p-8">
           <div className="max-w-2xl">
-            <h1 className="text-3xl font-bold mb-3">
+            <h1 className="text-3xl font-bold mb-3 text-white">
               SwasthyaSetu Health Monitoring
             </h1>
-            <p className="text-lg opacity-90 mb-6">
+            <p className="text-lg opacity-90 mb-6 text-white">
               Real-time health surveillance and outbreak detection across district villages
             </p>
             <div className="flex gap-4">
-              <Button variant="secondary" size="lg" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
+              <Button variant="secondary" size="lg" className="bg-white/10 border-white/20 ">
                 <AlertTriangle className="mr-2 h-5 w-5" />
                 Create Alert
               </Button>
-              <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10">
+              <Button variant="outline" size="lg">
                 <BarChart3 className="mr-2 h-5 w-5" />
                 View Reports
               </Button>
