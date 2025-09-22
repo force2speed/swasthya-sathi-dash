@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { DashboardLayout } from "@/components/DashboardLayout";
 import Dashboard from "./pages/Dashboard";
 import Alerts from "./pages/Alerts";
+import Reports from "./pages/Reports";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,10 +30,7 @@ const App = () => (
           } />
           <Route path="/reports" element={
             <DashboardLayout>
-              <div className="p-6">
-                <h1 className="text-2xl font-bold">Health Reports</h1>
-                <p className="text-muted-foreground mt-2">Coming soon...</p>
-              </div>
+              <Reports />
             </DashboardLayout>
           } />
           <Route path="/analytics" element={
